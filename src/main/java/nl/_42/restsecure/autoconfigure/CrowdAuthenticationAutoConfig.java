@@ -16,9 +16,9 @@ import org.springframework.security.authentication.AuthenticationProvider;
 
 import com.atlassian.crowd.integration.http.HttpAuthenticator;
 import com.atlassian.crowd.integration.http.VerifyTokenFilter;
-import com.atlassian.crowd.integration.springsecurity.RemoteCrowdAuthenticationProvider;
-import com.atlassian.crowd.integration.springsecurity.user.CrowdUserDetailsService;
-import com.atlassian.crowd.integration.springsecurity.user.CrowdUserDetailsServiceImpl;
+import com.atlassian.crowd.integration.soap.springsecurity.RemoteCrowdAuthenticationProvider;
+import com.atlassian.crowd.integration.soap.springsecurity.user.CrowdUserDetailsService;
+import com.atlassian.crowd.integration.soap.springsecurity.user.CrowdUserDetailsServiceImpl;
 import com.atlassian.crowd.service.GroupMembershipManager;
 import com.atlassian.crowd.service.UserManager;
 import com.atlassian.crowd.service.cache.CacheAwareAuthenticationManager;

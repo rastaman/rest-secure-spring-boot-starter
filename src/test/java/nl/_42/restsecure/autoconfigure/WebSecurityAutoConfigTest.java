@@ -5,12 +5,6 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.springframework.test.util.ReflectionTestUtils.getField;
 
-import nl._42.restsecure.autoconfigure.authentication.AbstractUserDetailsService;
-import nl._42.restsecure.autoconfigure.authentication.RegisteredUser;
-import nl._42.restsecure.autoconfigure.errorhandling.WebMvcErrorHandler;
-import nl._42.restsecure.autoconfigure.test.ActiveUserConfig;
-import nl._42.restsecure.autoconfigure.test.NullCrowdAuthenticationProviderConfig;
-
 import org.junit.Test;
 import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -20,7 +14,14 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.atlassian.crowd.integration.springsecurity.RemoteCrowdAuthenticationProvider;
+import com.atlassian.crowd.integration.soap.springsecurity.RemoteCrowdAuthenticationProvider;
+
+import nl._42.restsecure.autoconfigure.authentication.AbstractUserDetailsService;
+import nl._42.restsecure.autoconfigure.authentication.RegisteredUser;
+import nl._42.restsecure.autoconfigure.errorhandling.WebMvcErrorHandler;
+import nl._42.restsecure.autoconfigure.test.ActiveUserConfig;
+import nl._42.restsecure.autoconfigure.test.NullCrowdAuthenticationProviderConfig;
+
 
 public class WebSecurityAutoConfigTest extends AbstractApplicationContextTest {
     
